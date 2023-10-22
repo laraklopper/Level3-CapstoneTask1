@@ -5,7 +5,7 @@ const cors = require('cors'); // Middleware for enabling Cross-Origin Resource S
 const app = express();// Create an Express application
 const port = process.env.PORT || 3001;// Define the port for the server to listen on
 
-app.use(express.static(path.join(__dirname, 'front-end/build')));
+app.use(express.static(path.join(__dirname, 'front-end')));
 
 //======================SETUP MIDDLEWARE================================
 // Parse URL-encoded and JSON request bodies
